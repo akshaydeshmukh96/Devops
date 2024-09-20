@@ -1,5 +1,7 @@
 #!/bin/bash
 #writing bash script to change the label of jira tickets by using token.
+#in file jiraid.txt- you have to mention jira ticket id's
+#when you need to change lable of multiple files like 1000s of files then you can use bash script for loop concept
 
 version="1.2.3.4"
 for line in $(cat jiraid.txt)
