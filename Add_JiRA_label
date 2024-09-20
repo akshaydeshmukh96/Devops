@@ -1,0 +1,6 @@
+#!/bin/bash
+version="1.2.3.4"
+for line in $(cat jiraid.txt)
+do
+curl -X PUT -u "akshaydeshmukh3096@gmail.com:ATATT3xFfGF0iXNGaGsNzy1ovOF6fbgaplewGLbW-t3JtPA8AfvC8ayCRiQ6v9bDW3u2WbsB2eVNM-SPDfk9jhRVsDc8hr0nZfAyqi4O7X6OIwAeaX7zJaJ2Nf2ZbxLO7Vcwhk6QPpKFWWyEQ9TdWGYBgtlNBUVXcO_eeSRC98g5fl99ZOMJGlE=9828D6E8" --data '{"update":{"labels":[{"add":"DEV_PROJECT"}]}}' -H "Content-Type: application/json" https://akshaydesh.atlassian.net/rest/api/3/issue/$line
+done 
